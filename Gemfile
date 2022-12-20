@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 ruby '2.1.7'
 
-gem 'rails', '4.0.3'
+gem 'rails', '4.2.0'
 
-gem 'sprockets', '2.11.0'
+gem 'sprockets', '4.2.0'
 # gem 'sass-rails', '~> 4.0.3'
 gem 'sass-rails', github: 'camsys/sass-rails', tag: 'v4.0.3a'
 
