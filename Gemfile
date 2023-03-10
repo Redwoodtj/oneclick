@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 ruby '2.1.7'
 
-gem 'rails', '4.0.3'
+gem 'rails', '5.0.0'
 
-gem 'sprockets', '2.11.0'
+gem 'sprockets', '3.3.5'
 # gem 'sass-rails', '~> 4.0.3'
 gem 'sass-rails', github: 'camsys/sass-rails', tag: 'v4.0.3a'
 
@@ -15,19 +15,19 @@ gem 'translation_engine', github: 'derekedwards/translation_engine'
 #gem 'translation_engine', github: 'camsys/translation_engine'
 
 gem 'fog'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.1.1'
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-combobox'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'cancan'
-gem 'devise'
-gem 'figaro'
+gem 'devise', '>= 4.0.0'
+gem 'figaro', '>= 1.0.0'
 gem 'geocoder'
 gem 'haml-rails'
 gem 'pg'
 gem 'rolify'
 gem 'thin'
-gem 'puma'
+gem 'puma', '>= 2.12.0'
 gem "rack-timeout"
 gem 'awesome_print'
 gem 'chronic'
@@ -45,13 +45,13 @@ gem 'rails_12factor', group: [:integration, :production, :qa, :staging]
 gem 'font-awesome-sass'
 gem 'twitter-typeahead-rails', github: 'camsys/twitter-typeahead-rails'
 gem 'handlebars_assets'
-gem 'simple_token_authentication'
+gem 'simple_token_authentication', '>= 1.14.0'
 gem 'Indirizzo'
-gem 'momentjs-rails', '~> 2.5.0'
+gem 'momentjs-rails', '~> 2.5.1'
 gem 'bootstrap3-datetimepicker-rails', '= 3.0.0.0'
 gem 'active_model_serializers'
 gem 'jquery-datatables-rails', '~> 2.1.10.0.2'
-gem 'ajax-datatables-rails', '> 0.1.2'
+gem 'ajax-datatables-rails', '>= 0.2.0'
 gem 'active_attr'
 gem 'twitter-bootstrap-rails-confirm', github: 'bluerail/twitter-bootstrap-rails-confirm', branch: 'bootstrap3'
 gem 'activerecord-postgis-adapter', '= 1.1.0'
@@ -95,7 +95,7 @@ group :development do
   gem 'RedCloth' # Needed by yard
   gem 'foreman'
   # For sidekiq monitoring
-  gem 'sinatra', :require => nil
+  gem 'sinatra', '>= 2.0.0', :require => nil
   gem 'seed_dump'
 end
 
@@ -107,7 +107,7 @@ group :test do
   gem 'rspec-core', '~> 2.14.0'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'cucumber-rails', :require=>false
+  gem 'cucumber-rails', '>= 1.4.3', :require=>false
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
