@@ -92,7 +92,7 @@ group :development do
   gem 'travis'
   gem "letter_opener"
   gem 'yard'
-  gem 'RedCloth' # Needed by yard
+  gem 'RedCloth' , '>= 4.3.3' # Needed by yard
   gem 'foreman'
   # For sidekiq monitoring
   gem 'sinatra', :require => nil
