@@ -95,7 +95,7 @@ group :development do
   gem 'RedCloth' # Needed by yard
   gem 'foreman'
   # For sidekiq monitoring
-  gem 'sinatra', :require => nil
+  gem 'sinatra', '>= 4.0.0', :require => nil
   gem 'seed_dump'
 end
 
