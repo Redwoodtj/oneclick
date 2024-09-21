@@ -27,7 +27,7 @@ gem 'haml-rails'
 gem 'pg'
 gem 'rolify'
 gem 'thin'
-gem 'puma'
+gem 'puma', '>= 5.6.9'
 gem "rack-timeout"
 gem 'awesome_print'
 gem 'chronic'
