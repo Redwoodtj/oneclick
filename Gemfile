@@ -14,7 +14,7 @@ gem 'translation_engine', github: 'derekedwards/translation_engine'
 #Switched to custom translation engine that doesn't do inline help.  Inline help was duplicated in 1-click
 #gem 'translation_engine', github: 'camsys/translation_engine'
 
-gem 'fog'
+gem 'fog', '>= 1.37.0'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-combobox'
@@ -107,7 +107,7 @@ group :test do
   gem 'rspec-core', '~> 2.14.0'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'cucumber-rails', :require=>false
+  gem 'cucumber-rails', '>= 3.0.0', :require=>false
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
