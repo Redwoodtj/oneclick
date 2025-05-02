@@ -105,7 +105,7 @@ end
 
 group :test do
   gem 'rspec-core', '~> 2.14.0'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'capybara'
   gem 'cucumber-rails', :require=>false
   gem 'database_cleaner'
