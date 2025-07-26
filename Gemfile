@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 ruby '2.1.7'
 
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.4'
 
 gem 'sprockets', '2.11.0'
 # gem 'sass-rails', '~> 4.0.3'
@@ -15,15 +15,15 @@ gem 'translation_engine', github: 'derekedwards/translation_engine'
 #gem 'translation_engine', github: 'camsys/translation_engine'
 
 gem 'fog'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.1.0'
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-combobox'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.2'
 gem 'cancan'
-gem 'devise'
-gem 'figaro'
+gem 'devise', '>= 3.3.0'
+gem 'figaro', '>= 1.0.0'
 gem 'geocoder'
-gem 'haml-rails'
+gem 'haml-rails', '>= 0.6.0'
 gem 'pg'
 gem 'rolify'
 gem 'thin'
@@ -31,7 +31,7 @@ gem 'puma'
 gem "rack-timeout"
 gem 'awesome_print'
 gem 'chronic'
-gem 'mechanize'
+gem 'mechanize', '>= 2.7.3'
 gem 'activemodel'
 gem 'newrelic_rpm'
 gem 'polylines'
@@ -45,13 +45,13 @@ gem 'rails_12factor', group: [:integration, :production, :qa, :staging]
 gem 'font-awesome-sass'
 gem 'twitter-typeahead-rails', github: 'camsys/twitter-typeahead-rails'
 gem 'handlebars_assets'
-gem 'simple_token_authentication'
+gem 'simple_token_authentication', '>= 1.5.1'
 gem 'Indirizzo'
-gem 'momentjs-rails', '~> 2.5.0'
-gem 'bootstrap3-datetimepicker-rails', '= 3.0.0.0'
+gem 'momentjs-rails', '~> 2.6.0'
+gem 'bootstrap3-datetimepicker-rails', '= 3.0.0.1'
 gem 'active_model_serializers'
-gem 'jquery-datatables-rails', '~> 2.1.10.0.2'
-gem 'ajax-datatables-rails', '> 0.1.2'
+gem 'jquery-datatables-rails', '~> 2.1.10.0.3'
+gem 'ajax-datatables-rails', '>= 0.2.1'
 gem 'active_attr'
 gem 'twitter-bootstrap-rails-confirm', github: 'bluerail/twitter-bootstrap-rails-confirm', branch: 'bootstrap3'
 gem 'activerecord-postgis-adapter', '= 1.1.0'
@@ -62,14 +62,14 @@ gem 'rgeo-geojson'
 gem 'leaflet-rails', github: 'camsys/leaflet-rails'
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'poltergeist'
+gem 'poltergeist', '>= 1.11.0'
 gem 'sidekiq'
 gem 'ransack', github: 'camsys/ransack'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'browser'
 gem 'remotipart', '~> 1.2'
-gem 'savon'
+gem 'savon', '>= 2.11.2'
 gem 'attr_encrypted'
 gem 'uber-ruby', require: 'uber'
 gem 'StreetAddress', github: 'derrek/street-address'
@@ -81,7 +81,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry-byebug'
   gem 'html2haml'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'listen'
   gem 'rb-fchange', :require=>false
   gem 'rb-fsevent', :require=>false
@@ -93,25 +93,25 @@ group :development do
   gem "letter_opener"
   gem 'yard'
   gem 'RedCloth' # Needed by yard
-  gem 'foreman'
+  gem 'foreman', '>= 0.86.0'
   # For sidekiq monitoring
   gem 'sinatra', :require => nil
   gem 'seed_dump'
 end
 
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.5.0'
 end
 
 group :test do
   gem 'rspec-core', '~> 2.14.0'
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'cucumber-rails', :require=>false
+  gem 'rspec-rails', '>= 2.99.0'
+  gem 'capybara', '>= 2.9.2'
+  gem 'cucumber-rails', '>= 1.4.2', :require=>false
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
-  gem 'coveralls', require: false
+  gem 'coveralls', '>= 0.7.1', require: false
   gem 'simplecov', require: false
   gem 'timecop'
 end
