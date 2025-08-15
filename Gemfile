@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 ruby '2.1.7'
 
-gem 'rails', '4.0.3'
+gem 'rails', '7.1.5.2'
 
 gem 'sprockets', '2.11.0'
 # gem 'sass-rails', '~> 4.0.3'
@@ -21,7 +21,7 @@ gem 'bootstrap-combobox'
 gem 'jquery-rails'
 gem 'cancan'
 gem 'devise'
-gem 'figaro'
+gem 'figaro', '>= 1.0.0'
 gem 'geocoder'
 gem 'haml-rails'
 gem 'pg'
@@ -45,7 +45,7 @@ gem 'rails_12factor', group: [:integration, :production, :qa, :staging]
 gem 'font-awesome-sass'
 gem 'twitter-typeahead-rails', github: 'camsys/twitter-typeahead-rails'
 gem 'handlebars_assets'
-gem 'simple_token_authentication'
+gem 'simple_token_authentication', '>= 1.6.0'
 gem 'Indirizzo'
 gem 'momentjs-rails', '~> 2.5.0'
 gem 'bootstrap3-datetimepicker-rails', '= 3.0.0.0'
@@ -54,8 +54,8 @@ gem 'jquery-datatables-rails', '~> 2.1.10.0.2'
 gem 'ajax-datatables-rails', '> 0.1.2'
 gem 'active_attr'
 gem 'twitter-bootstrap-rails-confirm', github: 'bluerail/twitter-bootstrap-rails-confirm', branch: 'bootstrap3'
-gem 'activerecord-postgis-adapter', '= 1.1.0'
-gem 'rgeo-activerecord'
+gem 'activerecord-postgis-adapter', '= 3.1.2'
+gem 'rgeo-activerecord', '>= 6.2.0'
 gem 'rgeo'
 gem 'rgeo-shapefile'
 gem 'rgeo-geojson'
@@ -87,7 +87,7 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'sextant'
-  gem 'rails-erd'
+  gem 'rails-erd', '>= 1.3.0'
   gem 'growl'
   gem 'travis'
   gem "letter_opener"
@@ -96,7 +96,7 @@ group :development do
   gem 'foreman'
   # For sidekiq monitoring
   gem 'sinatra', :require => nil
-  gem 'seed_dump'
+  gem 'seed_dump', '>= 3.2.4'
 end
 
 group :development, :test do
@@ -107,7 +107,7 @@ group :test do
   gem 'rspec-core', '~> 2.14.0'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'cucumber-rails', :require=>false
+  gem 'cucumber-rails', '>= 1.4.3', :require=>false
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
