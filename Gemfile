@@ -89,7 +89,7 @@ group :development do
   gem 'sextant'
   gem 'rails-erd'
   gem 'growl'
-  gem 'travis'
+  gem 'travis', '>= 1.12.0'
   gem "letter_opener"
   gem 'yard'
   gem 'RedCloth' # Needed by yard
